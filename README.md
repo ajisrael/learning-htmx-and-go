@@ -32,3 +32,20 @@ git clone git@github.com:ThePrimeagen/fem-htmx-proj.git
 cd fem-html-proj
 go mod init mywebsite.tv/name
 ```
+
+### HATEOAS
+
+Hypermedia As The Engine Of Application State
+
+### General Flow
+
+```bash
+╭─----------------─---╮ ----- VERB /path ----> ╭─--─----╮
+| <el hx-VERB="path"> |                        | Server |
+╰─----------------─---╯ <------ <html> ------- ╰─-------╯
+
+* contents of <html> will replace the innerHTML of *
+    el if the request responded with 200
+```
+
+
