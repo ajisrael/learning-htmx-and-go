@@ -33,6 +33,8 @@ cd fem-html-proj
 go mod init mywebsite.tv/name
 ```
 
+## Basics
+
 ### HATEOAS
 
 Hypermedia As The Engine Of Application State
@@ -48,4 +50,10 @@ Hypermedia As The Engine Of Application State
     el if the request responded with 200
 ```
 
+## Testing & Debugging
 
+Use `htmx.logAll()` in browser console to see events and other information when developing with htmx.
+
+```bash
+htmx.logAll()
+```
