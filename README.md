@@ -3,6 +3,7 @@
 ## Introduction
 
 ### Links
+
     - [Course](https://theprimeagen.github.io/fem-htmx/)
     - [HTMX Docs](https://htmx.org/docs/)
     - [HTMX Book](https://hypermedia.systems/)
@@ -57,3 +58,7 @@ Use `htmx.logAll()` in browser console to see events and other information when 
 ```bash
 htmx.logAll()
 ```
+
+## Notes
+
+look into v.0 for helping with internal tools
