@@ -62,3 +62,30 @@ htmx.logAll()
 ## Notes
 
 look into v.0 for helping with internal tools
+
+
+302 will redirect with verb
+303 will redirect with GET
+
+## Other
+
+### Disable Button Script
+
+Disable button javascript function from course:
+
+```js
+export function disableButton(button: HTMLButtonElement) {
+    if (!button) {
+        throw new Error("form without button");
+    }
+
+    button.removeAttribute("disabled", true);
+    button.addEventListener("htmx:beforeRequest", function() {
+        button.toggleAttribute("disabled", true);
+    })
+
+    button.addEventListener("htmx:beforeSwap", function() {
+        button.toggleAttribute("disabled", true);
+    })
+}
+```
